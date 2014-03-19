@@ -7,7 +7,7 @@
 						    <h1 style="margin-left:91px;">Entrepreneurship Development Program</h1>
 						</div>
 						<div class="cont span_1_of_3">
-						    <marquee  behavior="scroll" direction="up" style=" color:#FFFFFF;">Your upward scrolling event 1  <br  /><br  />Your upward scrolling event 2 <br  /> <br  />Your upward scrolling event 3  <br  /><br  />Your upward scrolling event 4 <br  /><br  />Your upward scrolling event 5<br  /><br  />Your upward scrolling event 6</marquee>
+						   
 						</div>
 						<img src="<?php echo SITE_URL; ?>/resources/images/mac.png" alt="" style="margin-top:-90px;"/> 
 						
