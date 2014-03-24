@@ -1,5 +1,5 @@
 <?php
-define("SITE_URL","http://localhost/pansci");
+define("SITE_URL","http://pansci.in");
 require 'Slim/Slim.php';
 
 \Slim\Slim::registerAutoloader();
