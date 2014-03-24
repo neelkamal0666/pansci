@@ -1,4 +1,4 @@
-    <div class="work-top">
+ <div class="work-top">
 	     <div class="wrap">
 	     	<div class="single-left">
 	     		<h1>Get in touch with us</h1>
@@ -45,13 +45,12 @@
 						<li>
 							<img src="<?php echo SITE_URL; ?>/resources/images/location.png" alt=""/>
 							<div class="company_address">
-						     	<h3>Pantheon Scientific Pvt. Ltd :</h3>
+						     	<h3>Pantheon Scientifics Group</h3>
 								    	<p>Electronic City,</p>
 								   		<p>Bangalore, Karnataka</p>
 								   		<p>India</p>
 						   		<p>Phone:(00) 222 666 444</p>
-						   		<p>Fax: (000) 000 00 00 0</p>
-						 	 	<p>Email: <span>info[at]pansci.in</span></p>
+						 	 	<p>Email: <span>contact[at]pansci.in</span></p>
 				   			</div>
 						</li>
 					</ul>
@@ -60,4 +59,4 @@
 		    </div>
 	 	  </div>
 	  </div>	
-   </div>
+   </div>  <!-- Site footer -->

@@ -1,5 +1,4 @@
-  <!-- Site footer -->
- <div class="footer">
+  <div class="footer">
    	    <div class="wrap">
    	    	<div class="footer-left">
 		 		<ul class="footer-nav">
@@ -11,12 +10,12 @@
 				   <li class='last'><a href='<?php echo SITE_URL; ?>/contact'><span>Contact Us</span></a></li>
 				</ul>
 				<div class="copy">
-			       <p>© 2014  <a href="<?php echo SITE_URL; ?>">PanSci</a></p>
+			       <p>ï¿½ 2014  <a href="<?php echo SITE_URL; ?>">PanSci</a></p>
 		        </div>
 			</div>
 			<div class="social">	
 	           <ul>	
-				    <li class="facebook"><a href="#"><span> </span></a></li>
+				    <li class="facebook"><a href="https://www.facebook.com/pantheonsci" target="_blank"><span> </span></a></li>
 				    <li class="linkedin"><a href="#"><span> </span></a></li>
 				    <li class="twitter"><a href="#"><span> </span></a></li>	 
 				    <li class="pinterest"><a href="#"><span> </span></a></li>
