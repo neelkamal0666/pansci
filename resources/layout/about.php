@@ -11,10 +11,10 @@
 			<h4 class="m_2" id="NIESBUD">Our Initiatives</h4>
 	  		<div class="about-desc">
 			  <ul>
-			  <li>We are a group of people under Pantheon Scientifics Trust in association with NIESBUD who believe in devising a common platform for encouraging and supporting entrepreneurs.</li>
-			  <li>We are acting as a partner institute of NIESBUD which is an Apex Institute in the area of Entrepreneurship and Small Business Development under the Ministry of Micro, Small and Medium Enterprises Government of India</li>
-			  <li>We are working with Ministry of Micro Small and medium enterprises (MSME) to organize various entrepreneurship events supported by government to identify and promote  entrepreneurship in India.</li>
-			  <li>Through these events our goal is to identify and recognize people with entrepreneurship skills and endeavour.</li>
+			  <li><p>We are a group of people under Pantheon Scientifics Trust in association with NIESBUD who believe in devising a common platform for encouraging and supporting entrepreneurs.</p></li>
+			  <li><p>We are acting as a partner institute of NIESBUD which is an Apex Institute in the area of Entrepreneurship and Small Business Development under the Ministry of Micro, Small and Medium Enterprises Government of India</p</li>
+			  <li><p>We are working with Ministry of Micro Small and medium enterprises (MSME) to organize various entrepreneurship events supported by government to identify and promote  entrepreneurship in India.</p</li>
+			  <li><p>Through these events our goal is to identify and recognize people with entrepreneurship skills and endeavour.</p</li>
 			  </ul>
 			</div>
 				<h4 class="m_2" id="team">Our Team</h4>
