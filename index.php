@@ -31,6 +31,14 @@ $app->post('/login', function() use ($app) {
 	require_once("resources/layout/admin/footer.php");
 	}
 });
+$app->get('/admin/logout', function() use ($app){
+setcookie('user', '', time()-60*60*24*365, '/', 'pansci.in');
+setcookie('password', '', time()-60*60*24*365, '/', 'pansci.in');
+setcookie('user', '', time()-60*60*24*365, '/', 'www.pansci.in');
+setcookie('password', '', time()-60*60*24*365, '/', 'www.pansci.in');
+$url = SITE_URL.'/admin';
+$app->redirect($url);
+});
 $app->get('/change-password', function() use ($app){
 
         if(isset($_COOKIE['password'])){
