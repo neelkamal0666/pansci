@@ -17,39 +17,12 @@
         return false; // <--- important, prevents the link's href (hash in this example) from executing.
       }
 	  
-	 function SubmitCenter() {
-	 var center = $('#center_name').val().trim().replace(/"/gi,'');
-	 var address1 = $('#address1').val().trim().replace(/"/gi,'');
-	 var address2 = $('#address2').val().trim().replace(/"/gi,'');
-	 var address3 = $('#address3').val().trim().replace(/"/gi,'');
-	 var address4 = $('#address4').val().trim().replace(/"/gi,'');
-	 var address = '';
-	if(address1 !=''){
-		address = address1;
-	}
-	if(address2 != ''){
-		address = address + ' <br />'+address2;
-	}
-	if(address3 != ''){
-		address = address + ' <br />'+address3;
-	}
-	if(address4 != ''){
-		address = address + ' <br />'+address4;
-	}
-	var center_email = $('#center_email').val().trim().replace(/"/gi,'');
-	var center_phone = $('#center_phone').val().trim();
-	if(center.length >128){
-		$("#error_msg").replaceWith('<div id="error_msg" class="alert alert-danger"><center>Center name is too long. Only 128 characters are allowed</center></div>');
-		return false;
-	}
-	if(address.length >1024){
-		 $("#error_msg").replaceWith('<div id="error_msg"  class="alert alert-danger"><center>Address is too long. Only 1024 characters are allowed.</center></div>');
-		return false;
-	}
-	 var dataString = 'center='+center+'&address=' + address+'&center_email='+center_email+'&center_phone='+center_phone;
+	 function SubmitAnnouncement() {
+	 var announcement = $('#announcement').val().trim().replace(/"/gi,'');
+	 var dataString = 'announcement='+announcement;
 	 var server =SITE_URL+'/resources/ajax_submit/add_center.php';
-	if(center =='' || address =='' || center_email == '' || center_phone == '') {
-	 $("#error_msg").replaceWith('<div id ="error_msg" class="alert alert-danger"><cente>All Fields are Compulsory.</center></div>');
+	if(announcement =='') {
+	 $("#error_msg").replaceWith('<div id ="error_msg" class="alert alert-danger"><center>Announcement cant be empty.</center></div>');
 	} else {
 	 $("#load_section").append('<center><img src="'+SITE_URL+'/resources/images/ajax-loader.gif" /></center>');
         $.ajax({
@@ -58,9 +31,9 @@
           data: dataString,
           cache: false,
           success: function(msg) {
-		 	$("#load_section").replaceWith('<div class="container" id="load_section"><br /><div class="alert alert-success"><center>Center Has Been Added Successfully.</center></div></div>');
+		 	$("#load_section").replaceWith('<div class="container" id="load_section"><br /><div class="alert alert-success"><center>Announcement Has Been Added Successfully.</center></div></div>');
 	window.setTimeout(function(){ 
-	window.location.href ='http://s.leadroot.com/gateacademy/dashboard';
+	window.location.href =SITE_URL+'/admin/dashboard';
 	},2000);
 		     			}
         });
