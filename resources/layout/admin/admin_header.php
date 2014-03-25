@@ -13,7 +13,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="resources/css/bootstrap.css" rel="stylesheet">
-
+	<link href="resources/css/dashboard.css" rel="stylesheet">
     <!-- Custom styles for this template -->
 	
    
