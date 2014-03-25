@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
-    <title>Gate Academy</title>
+    <title>Pansci Admin Panel</title>
 
     <!-- Bootstrap core CSS -->
     <link href="resources/css/bootstrap.css" rel="stylesheet">
