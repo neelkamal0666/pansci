@@ -20,7 +20,7 @@
 	 function SubmitAnnouncement() {
 	 var announcement = $('#announcement').val().trim().replace(/"/gi,'');
 	 var dataString = 'announcement='+announcement;
-	 var server =SITE_URL+'/resources/ajax_submit/add_center.php';
+	 var server =SITE_URL+'/resources/ajax_submit/add_announcement.php';
 	if(announcement =='') {
 	 $("#error_msg").replaceWith('<div id ="error_msg" class="alert alert-danger"><center>Announcement cant be empty.</center></div>');
 	} else {
