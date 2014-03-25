@@ -15,17 +15,17 @@ $app->get('/contact','contact');
 $app->get('/admin/dashboard', function() use ($app){
 	if (isset($_COOKIE['password'])) {
 		if($_COOKIE['password']==md5("pansci")) {
-		require_once("resources/layout/header.php");
-		main_header('Dashboard');
-		require_once("resources/layout/dashboard.php");
-		require_once("resources/layout/footer.php");
+		require_once("resources/layout/admin/header.php");
+		main_header('admin','Admin -Panel');
+		require_once("resources/layout/admin/dashboard.php");
+		require_once("resources/layout/admin/footer.php");
 		} else {
 		$url = SITE_URL.'/admin';
-		$app->redirect(SITE_URL);
+		$app->redirect($url);
 		}
 	} else {
 		$url = SITE_URL.'/admin';
-		$app->redirect(SITE_URL);
+		$app->redirect($url);
 	}
 });
 $app->get('/admin','admin');
@@ -119,7 +119,6 @@ main_header('contact','Contact Us');
 require_once("resources/layout/contact.php");
 require_once("resources/layout/footer.php");
 }
-
 function admin(){
 require_once("resources/layout/admin/admin_header.php");
 main_header('admin','Admin -Panel');
