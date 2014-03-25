@@ -1,4 +1,4 @@
- var SITE_URL = "http://s.leadroot.com/gateacademy";
+ var SITE_URL = "http://pansci.in";
 	var x = document.cookie;
 	var p=window.location.pathname.substring(1);
 	if(p=='gateacademy/dashboard' || p== 'gateacademy/emailsettings' || p=='gateacademy/landingpage'){
