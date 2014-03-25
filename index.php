@@ -12,7 +12,22 @@ $app->get('/about','about');
 $app->get('/services','services');
 $app->get('/gallery','gallery');
 $app->get('/contact','contact');
-$app->get('/admin/dashboard','dashboard');
+$app->get('/admin/dashboard', function() use ($app){
+	if (isset($_COOKIE['password'])) {
+		if($_COOKIE['password']==md5("pansci")) {
+		require_once("resources/layout/header.php");
+		main_header('Dashboard');
+		require_once("resources/layout/dashboard.php");
+		require_once("resources/layout/footer.php");
+		} else {
+		$url = SITE_URL.'/admin';
+		$app->redirect(SITE_URL);
+		}
+	} else {
+		$url = SITE_URL.'/admin';
+		$app->redirect(SITE_URL);
+	}
+});
 $app->get('/admin','admin');
 $app->post('/login', function() use ($app) {
 	$password='pansci';
@@ -108,11 +123,5 @@ function dashboard() {
 require_once("resources/layout/admin/header.php");
 main_header('admin','Admin -Panel');
 require_once("resources/layout/admin/dashboard.php");
-require_once("resources/layout/admin/footer.php");
-}
-function admin(){
-require_once("resources/layout/admin/admin_header.php");
-main_header('admin','Admin -Panel');
-require_once("resources/layout/admin/login_page.php");
 require_once("resources/layout/admin/footer.php");
 }
