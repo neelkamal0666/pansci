@@ -14,6 +14,23 @@ $app->get('/gallery','gallery');
 $app->get('/contact','contact');
 $app->get('/admin/dashboard','dashboard');
 $app->get('/admin','admin');
+$app->post('/login', function() use ($app) {
+	$password='pansci';
+    if($_POST['user'] == 'admin' && $_POST['password'] == $password ){
+	 setcookie('user', md5("admin"), time()+60*60*24*365, '/', 'pansci.in');
+     setcookie('password', md5($password), time()+60*60*24*365, '/', 'pansci.in');
+	 setcookie('user', md5("admin"), time()+60*60*24*365, '/', 'www.pansci.in');
+     setcookie('password', md5($password), time()+60*60*24*365, '/', 'www.pansci.in');
+	 $url = SITE_URL.'/admin/dashboard';
+	 $app->redirect($url);
+	} else {
+	$login_error ='Wrong Username or password';
+	require_once("resources/layout/admin/admin_header.php");
+	main_header('admin','Admin -Panel');
+	require_once("resources/layout/admin/login_page.php");
+	require_once("resources/layout/admin/footer.php");
+	}
+});
 $app->get('/change-password', function() use ($app){
 
         if(isset($_COOKIE['password'])){
