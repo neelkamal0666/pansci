@@ -119,9 +119,10 @@ main_header('contact','Contact Us');
 require_once("resources/layout/contact.php");
 require_once("resources/layout/footer.php");
 }
-function dashboard() {
-require_once("resources/layout/admin/header.php");
+
+function admin(){
+require_once("resources/layout/admin/admin_header.php");
 main_header('admin','Admin -Panel');
-require_once("resources/layout/admin/dashboard.php");
+require_once("resources/layout/admin/login_page.php");
 require_once("resources/layout/admin/footer.php");
 }
