@@ -1,5 +1,6 @@
 <?php
-define("SITE_URL","http://pansci.in");
+require 'lib/config.php';
+require 'lib/db_connect.php';
 require 'Slim/Slim.php';
 
 \Slim\Slim::registerAutoloader();
@@ -11,6 +12,40 @@ $app->get('/about','about');
 $app->get('/services','services');
 $app->get('/gallery','gallery');
 $app->get('/contact','contact');
+$app->get('/admin/dashboard','dashboard');
+$app->get('/admin','admin');
+$app->get('/change-password', function() use ($app){
+
+        if(isset($_COOKIE['password'])){
+
+                $p_hash = DB_PREFIX.'settings';
+
+                $password = get_data_from_hash($p_hash,"password");
+
+                if($_COOKIE['password']==md5($password)) {
+
+                        require_once("resources/layout/dashboard_layout/header.php");
+
+                        main_header('change-password','change password');
+
+                        require_once("resources/layout/dashboard_layout/change_password.php");
+
+                        require_once("resources/layout/dashboard_layout/footer.php");
+
+                } else {
+
+			$app->redirect(SITE_URL);
+
+		}
+
+        } else {
+
+                $app->redirect(SITE_URL);
+
+        }
+
+});
+
 
 $app->run();
 
@@ -43,4 +78,16 @@ require_once("resources/layout/header.php");
 main_header('contact','Contact Us');
 require_once("resources/layout/contact.php");
 require_once("resources/layout/footer.php");
+}
+function dashboard() {
+require_once("resources/layout/admin/header.php");
+main_header('admin','Admin -Panel');
+require_once("resources/layout/admin/dashboard.php");
+require_once("resources/layout/admin/footer.php");
+}
+function admin(){
+require_once("resources/layout/admin/admin_header.php");
+main_header('admin','Admin -Panel');
+require_once("resources/layout/admin/login_page.php");
+require_once("resources/layout/admin/footer.php");
 }
