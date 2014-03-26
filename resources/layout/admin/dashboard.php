@@ -11,7 +11,7 @@
 				foreach($announcements as $announcement) { ?>
 			<div class="row">
 			<div class="col-md-9" style="height:72px;"><?php echo strip_tags($announcement['note']);?></div>
-			<a data-toggle="modal"  class="delete" id="#delete<?php echo $announcement['id']; ?>" style="cursor:pointer;"> <div class="col-md-2" style="height:72px;">Delete</div></a>
+			<a data-toggle="modal"  class="delete" id="<?php echo $announcement['id']; ?>" style="cursor:pointer;"> <div class="col-md-2" style="height:72px;">Delete</div></a>
 			</div>
 					
 				<?php }
