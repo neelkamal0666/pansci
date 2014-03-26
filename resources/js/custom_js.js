@@ -48,7 +48,7 @@
          	success: function() {
 		 	 $("#load_section").replaceWith('<div class="container" id="load_section"><br /><div class="alert alert-success"><center>Announcement Has Been Deleted Successfully.</center></div></div>');
 			window.setTimeout(function(){
-			window.location.href =SITE_URL+'/dashboard';
+			window.location.href =SITE_URL+'/admin/dashboard';
 			},2000);
          	 }
        		 });
