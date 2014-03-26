@@ -1,6 +1,7 @@
 <?php
 require 'lib/config.php';
 require 'lib/db_connect.php';
+require 'lib/models.php';
 require 'Slim/Slim.php';
 
 \Slim\Slim::registerAutoloader();
@@ -13,20 +14,20 @@ $app->get('/services','services');
 $app->get('/gallery','gallery');
 $app->get('/contact','contact');
 $app->get('/admin/dashboard', function() use ($app){
-	if (isset($_COOKIE['password'])) {
-		if($_COOKIE['password']==md5("pansci")) {
+	//if (isset($_COOKIE['password'])) {
+		//if($_COOKIE['password']==md5("pansci")) {
 		require_once("resources/layout/admin/header.php");
 		main_header('admin','Admin -Panel');
 		require_once("resources/layout/admin/dashboard.php");
 		require_once("resources/layout/admin/footer.php");
-		} else {
+		/*} else {
 		$url = SITE_URL.'/admin';
 		$app->redirect($url);
 		}
 	} else {
 		$url = SITE_URL.'/admin';
 		$app->redirect($url);
-	}
+	} */
 });
 $app->get('/admin','admin');
 $app->post('/login', function() use ($app) {

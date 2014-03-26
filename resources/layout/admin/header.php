@@ -39,13 +39,12 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav side-nav">
-            <li <?php if($page=='announcements'){  ?> class="active"<?php } ?>><a href="<?php echo SITE_URL;?>/admin/dashboard"> Announcements</a></li>
-            <li <?php if($page=='aboutus'){ ?>class="active"<?php } ?>><a href="#">About Us</a></li>
-	   		<li <?php if($page=='serices'){ ?>class="active" <?php } ?>><a href="#">Services</a></li>	
+            <li <?php if($page=='admin'){  ?> class="active"<?php } ?>><a href="<?php echo SITE_URL;?>/admin/dashboard"> Announcements</a></li>
+           
 	     </ul>
 
           <ul class="nav navbar-nav navbar-right navbar-user">
-            <li class="dropdown messages-dropdown">
+            <li <?php if($page=='admin'){  ?> class="active"<?php } ?>>
              <a href="<?php echo SITE_URL; ?>/admin/dashboard">View Announcements</a>
               
             </li>
@@ -53,13 +52,7 @@
              <a href="#" id="add_announcements">Add Announcements</a></li>
              
             </li>
-            <li class="dropdown user-dropdown">
-             <a href="#" id="add_user">Add Users</a>
-             
-            </li>
-		 <li class="dropdown user-dropdown">
-               <a href="<?php echo SITE_URL;  ?>/admin/change-password">Change Password</a>
-               </li>
+            
 
 		<li class="dropdown user-dropdown">
                <a href="<?php echo SITE_URL;  ?>/admin/logout">Log Out</a>
