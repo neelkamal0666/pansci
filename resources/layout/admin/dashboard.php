@@ -7,7 +7,8 @@
 		
       
           <div class="col-lg-12">
-            <h1>Dashboard <small>Pansci</small></h1>            
+            <h1>Dashboard <small>Pansci</small></h1>  
+				
         </div>
 
       
