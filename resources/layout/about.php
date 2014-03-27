@@ -1,9 +1,9 @@
  <div class="main">
 	  <div class="wrap">
 	  	<div class="single-top">
-	  		<h4 class="m_2">About Pantheon Scientifics Group</h4>
+	  		<h4 class="m_2">About Pantheon Scientifics</h4>
 	  		<div class="about-desc">
-			   <h3><a href="#">Pantheon Scientifics Trust</a></h3>
+			   <h3><a href="#">Pantheon Scientifics</a></h3>
 			   <p>As an organisation of academics , consultants and researchers dedicated to optimising human potential and creating opportunities for personal growth and global understanding via quality education for life through scientific innovations and mentorship . Our goal is to nurture the inherent potential and talent of each child and create lifelong learners who will be the leaders of tomorrow. Our aspiration is to create global citizens who are innovative and have a strong sense of values</p>
 			 
 			   <a href="#" title="read more" class="button">read more</a>				    
