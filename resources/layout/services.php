@@ -29,7 +29,8 @@
 		    </div>
 			
 <div class="about-desc" id="vigyaan">
- <h3><a href="#">Coming Soon </a></h3>
+ <h3><a href="#">Vigyaan </a></h3>
+ <p>Coming Soon</p>
 </div>			
 	</div>			
 	  </div>
