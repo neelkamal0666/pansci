@@ -84,7 +84,7 @@
 		    
 		});
 	</script>
-	<script type="text/javascript" src="<?php echo SITE_URL; ?>/resources/scripts/jquery.flexisel.js"></script>
+	<script type="text/javascript" src="<?php echo SITE_URL; ?>/resources/js/jquery.flexisel.js"></script>
      </div>
 	</div>	  
     
