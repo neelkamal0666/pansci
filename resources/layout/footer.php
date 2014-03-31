@@ -1,5 +1,5 @@
   <div class="footer">
-   	    <div class="wrap">
+   	    <div class="wrap" style="background-color:#31333E;">
    	    	<div class="footer-left">
 		 		<ul class="footer-nav">
 				   <li><a href='<?php echo SITE_URL; ?>'><span>Home</span></a></li> |

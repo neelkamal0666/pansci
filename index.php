@@ -12,6 +12,7 @@ $app->get('/','showHome');
 $app->get('/about','about');
 $app->get('/services','services');
 $app->get('/gallery','gallery');
+$app->get('/videos','videos');
 $app->get('/contact','contact');
 $app->get('/admin/dashboard', function() use ($app){
 	if (isset($_COOKIE['password'])) {
@@ -112,6 +113,12 @@ function gallery() {
 require_once("resources/layout/header.php");
 main_header('gallery','Photo Gallery');
 require_once("resources/layout/gallery.php");
+require_once("resources/layout/footer.php");
+}
+function videos() {
+require_once("resources/layout/header.php");
+main_header('gallery','Video Gallery');
+require_once("resources/layout/videos.php");
 require_once("resources/layout/footer.php");
 }
 function contact() {
