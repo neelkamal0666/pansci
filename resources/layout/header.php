@@ -42,9 +42,9 @@ function main_header($page,$title){ ?>
 </head>
 <body>
   <div class="header">	
-      <div class="wrap"> 
+      <div class="wrap" style="background-color:#31333E;"> 
           <div class="logo">
-			 <a href="<?php echo SITE_URL; ?>" style="font-size:24px; color:#FFFFFF; font-weight:bold;">Pantheon Scientifics Group</a>
+			 <a href="<?php echo SITE_URL; ?>" style="font-size:24px; color:#FFFFFF; font-weight:bold;">Pantheon Scientifics</a>
 		  </div>
 		  <div class="header-right">
 			 <div id='cssmenu'>
@@ -64,11 +64,11 @@ function main_header($page,$title){ ?>
 				   </li> |
 				   <li <?php if($page=='gallery') { ?> class="active"<?php } ?>><a href='<?php echo SITE_URL; ?>/gallery'><span>Gallery</span></a>
 				    <ul>
-				         <li class='has-sub'><a href='<?php echo SITE_URL; ?>/gallery#videos'><span>Videos</span></a></li>
+				         <li class='has-sub'><a href='<?php echo SITE_URL; ?>/videos'><span>Videos</span></a></li>
 						 <li class='has-sub'><a href='<?php echo SITE_URL; ?>/gallery#images'><span>Images</span></a></li>
 				      </ul>
 				   </li> |
-				   <li <?php if($page=='contact') { ?> class="active"<?php } ?>><a href='<?php echo SITE_URL; ?>/contact'><span>Contact Us</span></a></li>
+				   <li <?php if($page=='contact') { ?> class="active"<?php } ?> style="width:130px;"><a href='<?php echo SITE_URL; ?>/contact'><span>Contact Us</span></a></li>
 				</ul>
 
 			 </div>
