@@ -9,12 +9,12 @@
 						<div class="cont span_1_of_3" style="height:400px; border:1px solid #f5f5f5; padding:20px;">
 						<center><h1 style="font-size:24px;">News and Events</h1></center><hr /><br />
 						    <marquee behavior="scroll" scrollamount="1" scrolldelay="10" direction="up" onmouseover="this.stop();" onmouseout="this.start();" color:#000000;">
-							<?php /* $announcements = get_announcements();
+							<?php  $announcements = get_announcements();
 									if(isset($announcements)) { 
 										foreach($announcements as $announcement) { 
 										echo strip_tags($announcement['note']).'<br /><br />';
 										}
-									} */?>
+									} ?>
 							</marquee>
 						</div>
 						
